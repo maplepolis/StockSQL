@@ -1,5 +1,56 @@
-StockSQL is a stock trading simulator built with C and PostgreSQL that allows users to buy and sell stocks using historical market data to test trading strategies in a realistic environment. The system is designed with a microservice-style architecture, running multiple PostgreSQL databases in Docker containers to support scalable transactions and data queries.
+# StockSQL
 
-The project focuses on database design and performance optimization. SQL queries and schemas were carefully redesigned to improve efficiency, reducing query latency by approximately 50%. StockSQL runs in a Linux environment and includes Bash scripts for automation and deployment, with cloud deployment supported via AWS Lightsail.
+StockSQL is a stock trading simulator implemented in C with a PostgreSQL backend, designed to simulate buy and sell operations using historical market data. The system is intended for testing trading strategies and studying market behavior under realistic conditions.
 
-Tech stack: C, PostgreSQL, SQL, Docker, Bash, Linux, AWS Lightsail
+---
+
+## Tech Stack
+
+* **Languages:** C, bash
+* **Database:** PostgreSQL
+* **Containerization:** Docker
+* **Deployment:** AWS Lightsail
+
+## Getting Started
+
+### Prerequisites
+
+Install the following before running the project:
+
+* C/C++ compiler (e.g., gcc, clang)
+* **PostgreSQL** server
+* **Docker** & **Docker Compose**
+* Bash shell utilities
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/maplepolis/StockSQL.git
+   cd StockSQL
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   ./InstallDeps.sh
+   ```
+
+3. **Build the project**
+
+   ```bash
+   make
+   ```
+
+4. **Run database containers**
+
+   ```bash
+   docker compose up -d
+   ```
+
+---
+
+If you want, I can help add **schema diagrams**, **example SQL queries**, or **API/CLI documentation** to this README too — just tell me what you need!
+
+[1]: https://github.com/maplepolis/StockSQL "GitHub - maplepolis/StockSQL"
